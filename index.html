@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="./static/index.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-title">
+            <div class="ref">
+                <p class=""><small>Inspired by</small></p>
+                <img src="./static/img/Genius_Logo.png" class="Genius_Logo"/>
+            </div>
+            <div class="about">
+                <p>Group 7 <small>Activity 1 (HTML) ITE 308 - Web System and Technologies</small></p>
+            </div>
+            <img src="./static/img/song-cover.jpg" class="song-cover"/>
+            <div class="content-title">
+                <div>
+                    <p class="song-title">I'm Tired</p>
+                    <p>Labrinth & Zendaya</p>
+                    <p>Track 1: Euphoria: Season 2</p>
+                </div>
+    
+                <div class="song-details">
+                    <small>
+                        <p class="">Produced by</p>
+                    </small>
+                    <p>Labrinth</p>
+                </div>
+    
+                <div class="song-details">
+                    <small>
+                        <p class="">Released date</p>
+                    </small>
+                    <p>February 28, 2022</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-lyrics">
+            <div>
+
+                <small><p class="">I'm Tired lyrics</p></small><br/>
+                <p class="lyrics">
+                    <pre>
+[Chorus: Labrinth]
+Hey Lord, You know I'm tired
+Hey Lord, You know I'm tired
+Hey Lord, You know I'm tired of tears
+Hey Lord, just cut me loose
+
+[Verse 1: Labrinth]
+Hey Lord, You know I'm fighting
+Hey Lord, You know I'm fighting
+I'm sure this world is done with me
+Hey Lord, You know it's true
+
+[Verse 2: Labrinth, with Zendaya]
+Now the tide is rollin' in
+I don't wanna win
+Let it take me, let it take me
+I'll be on my way
+How long can I stay?
+In a place that can't contain me
+
+[Chorus: Labrinth, with Zendaya]
+Hey Lord, You know I'm tired
+Hey Lord, You know I'm tired
+
+[Bridge]
+Ooh, ooh, ooh
+Ooh, ooh, ooh
+Ooh, ooh, ooh, ooh
+Ooh, ooh, ooh
+
+[Outro: Zendaya]
+Hey Lord, You know I'm trying
+Hey Lord, You know I'm trying
+It's all I got, is this enough?
+Hey Lord, I wanna stay
+Hey Lord, You know I'm fighting
+Hey Lord, You know I'll find it
+I don't know when or how today
+Hey Lord, I'm on my way
+                    </pre>
+                </p>
+            </div>
+        </div>
+        <div class="container-audio sticky" id="sticky-content">
+            <div class="content-audio">
+                <button id="hideButton" onclick="hideOnClick()" class="hideButton"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                <button id="show" onclick="showOnClick()" style="display: none;" class="showButton"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                <img src="./static/img/song-cover.jpg" class="song-audio-cover" id="song-cover" />
+                <small id="song-detail" style="">
+                    <p>I'm Tired</p>
+                    <p>Labrinth & Zendaya</p>
+                </small>
+                <audio controls id="song">
+                    <source src="./static/song/Labrinth & Zendaya - I'm Tired (Lyrics).mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                  </audio>
+                  <div id="PlayerButton" style="display: none;">
+                      <button id="play" onclick="Play()"><i class="fa fa-play"></i></button>
+                      <button id="pause" onclick="Pause()" style="display: none;"><i class="fa fa-pause"></i></button>
+                  </div>
+            </div>
+        </div>
+        <div class="container-footer">
+            <div class="content-footer">
+                <h3>
+                    GROUP 7
+                    <small>
+                        Activity 1 (HTML) ITE 308 - Web System and Technologies
+                    </small>
+                </h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
